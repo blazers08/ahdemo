@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block header %}
+<h1>{% block title %}Sign Up{% endblock %}</h1>
+{% endblock %}
+{% block content %}
+<form method="post">
+   <label for="email">Email</label>
+   <input name="email" id="email" required>
+   <label for="password">Password</label>
+   <input type="password" name="password" id="password" required>
+   <input type="submit" value="Sign Up">
+</form>
+<body>
+   <p align="center">
+      <a href="/google">
+      <img id="google"
+         src="https://img.shields.io/badge/Google-Connect-brightgreen?style=for-the-badge&labelColor=black&logo=google"
+         alt="Google"> <br>
+      </a>
+      <a href="/facebook">
+      <img id="facebook"
+         src="https://img.shields.io/badge/Facebook-Connect-brightgreen?style=for-the-badge&labelColor=black&logo=facebook"
+         alt="Facebook"> <br>
+      </a>
+   </p>
+</body>
+{% endblock %}

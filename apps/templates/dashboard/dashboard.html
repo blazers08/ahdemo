@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block header %}
+<h1>{% block title %}DashBoard{% endblock %}</h1>
+{% endblock %}
+{% block content %}
+
+<a href="{{ url_for('home') }}">Index</a>
+<a href="{{ url_for('userprofile') }}">UserProfile</a>
+
+<li>Total number of users who have signed up.</li><span>{{ user_stats }}</span><br>
+<li>Timestamp of user sign up.</li><span>{{ user_info.sign_up_time }}</span>
+<li>Number of times logged in.</li><span>{{ user_info.logged_in_times }}</span>
+<li>Last Session Timetamp.</li><span>{{ session['last_session_time'] }}<span>
+{% endblock %}

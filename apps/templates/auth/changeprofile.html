@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block header %}
+<h1>{% block title %}Change Display Name{% endblock %}</h1>
+{% endblock %}
+{% block content %}
+
+<form method="post">
+   <label for="Name">Name</label>
+   <input name="name" id="name" required>
+   <input type="submit" value="Change">
+</form>
+{% endblock %}
